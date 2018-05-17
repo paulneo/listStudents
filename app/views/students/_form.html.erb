@@ -1,0 +1,23 @@
+<%= form_for @student  do |f| %>
+<div class="">
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</div>
+<div class="">
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+</div>
+<div class="">
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+</div>
+<div class="">
+  <%= f.label :code %>
+  <%= f.text_field :code %>
+</div>
+
+
+
+  <%= f.submit "Enviar" %>
+
+<% end %>
