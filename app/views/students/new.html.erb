@@ -1,22 +1,31 @@
-<%= form_for(@student) do |f|%>
-  <div class="">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+<div class="head" >
+  <div class="container headList">
+    <h1>Nuevo Estudiante</h1>
   </div>
-  <div class="">
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="">
-    <%= f.label :address %>
-    <%= f.text_field :address %>
+</div>
+<div class="container margin-top50">
+  <%= form_for(@student) do |f|%>
+    <div class="margin-top10 form">
+      <%= f.label :nombre %>
+      <%= f.text_field :name %>
+    </div>
+    <div class=" margin-top10 form">
+      <%= f.label :Apellido %>
+      <%= f.text_field :last_name %>
+    </div>
+    <div class="margin-top10 form">
+      <%= f.label :Direccion %>
+      <%= f.text_field :address %>
 
-  </div>
-  <div class="">
-      <%= f.label :code %>
-      <%= f.text_field :code %>
-  </div>
-  <%= f.submit %>
+    </div>
+    <div class="margin-top10 form">
+        <%= f.label :Codigo %>
+        <%= f.text_field :code %>
+    </div>
+    <%= f.submit class:"buttonCrear buttonForm" , value:"Crear Estudiante "%>
 
-<%end%>
-<p><%= link_to 'regresar', students_path %></p>
+  <%end%>
+  <p class="button"><%= link_to 'regresar', students_path  ,class:"white"%></p>
+
+
+</div>
