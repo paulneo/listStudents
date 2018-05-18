@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  
+
   before_action :find_student, only: [:show,:edit,:update,:destroy]
 
   def index
@@ -16,7 +16,6 @@ class StudentsController < ApplicationController
   end
 
   def create
-    raise
     @student = Student.new(student_params)
     if @student.save
       redirect_to  @student
