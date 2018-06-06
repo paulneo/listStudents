@@ -244,4 +244,17 @@ document.addEventListener("DOMContentLoaded",function(){
       map: map
     });
   }
+
+  var autoComplete = new google.maps.places.Autocomplete(
+  document.getElementById("search"), {
+    types: ['establishment']
+  });
+
+  google.maps.event.addListener(autoComplete, 'place_changed', function() {
+    var place = autocomplete.getPlace();
+    if (place.geometry) {
+       map.panTo(place.geometry.location);
+       map.setZoom(15);
+    }
+  });
 });

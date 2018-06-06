@@ -3,6 +3,7 @@
     <h1>Nuevo Estudiante</h1>
   </div>
 </div>
+
 <div class="container margin-top50">
   <%= form_for(@student) do |f|%>
     <div class="margin-top10 form">
@@ -15,7 +16,7 @@
     </div>
     <div class="margin-top10 form">
       <%= f.label :Direccion %>
-      <%= f.text_field :address %>
+      <%= f.text_field :address ,id:"search"%>
 
     </div>
     <div class="margin-top10 form">
