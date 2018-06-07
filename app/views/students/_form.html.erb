@@ -2,19 +2,19 @@
 <div class="container margin-top50">
   <%= form_for @student  do |f| %>
     <div class=" margin-top10 form">
-      <%= f.label :name %>
+      <%= f.label :Nombre %>
       <%= f.text_field :name %>
     </div>
     <div class="margin-top10 form">
-      <%= f.label :last_name %>
+      <%= f.label :Apellido %>
       <%= f.text_field :last_name %>
     </div>
     <div class="margin-top10 form">
-      <%= f.label :address %>
-      <%= f.text_field :address ,id:"search" %>
+      <%= f.label :Direccion %>
+      <%= f.text_field :address %>
     </div>
     <div class="margin-top10 form">
-      <%= f.label :code %>
+      <%= f.label :Codigo %>
       <%= f.text_field :code %>
     </div>
 
@@ -23,6 +23,6 @@
       <%= f.submit "Enviar" ,class:"button buttonForm" %>
 
   <% end %>
-  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAxU9Z0c2gm5oEg64_FYukuJLhMHoKe_TY">
-  </script>
+
+
 </div>

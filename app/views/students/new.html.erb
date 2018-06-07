@@ -16,21 +16,20 @@
     </div>
     <div class="margin-top10 form">
       <%= f.label :Direccion %>
-      <%= f.text_field :address %>
+      <%= f.text_field :address, id:"pac-input-complete"  %>
 
     </div>
     <div class="margin-top10 form">
         <%= f.label :Codigo %>
         <%= f.text_field :code %>
     </div>
-    <%= f.submit class:"buttonCrear buttonForm" , value:"Crear Estudiante "%>
+    <%= f.submit "Crear Estudiante", class:"buttonCrear buttonForm"%>
 
   <%end%>
   <p class="button"><%= link_to 'regresar', students_path  ,class:"white"%></p>
-
-  <input id="pac-input"  type="text" placeholder="Search ">
+  <input type="text" id="pac-input" placeholder="Escribe tu dirección">
   <div id="map2" class="map-search margin-bottom-50"></div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxU9Z0c2gm5oEg64_FYukuJLhMHoKe_TY&libraries=places&callback=initAutocomplete"
-    async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxU9Z0c2gm5oEg64_FYukuJLhMHoKe_TY&libraries=places&callback=initAutocomplete"
+  async defer></script>
 </div>
