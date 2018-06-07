@@ -12,8 +12,9 @@
 //
 //= require rails-ujs
 //= require_tree .
+//= require searchMaps
 
-document.addEventListener("DOMContentLoaded",function(){
+
   var map_google = document.getElementById("map-geolocation")
 
   if(map_google){
@@ -257,4 +258,3 @@ document.addEventListener("DOMContentLoaded",function(){
        map.setZoom(15);
     }
   });
-});
