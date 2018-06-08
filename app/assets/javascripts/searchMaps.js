@@ -1,6 +1,6 @@
 
 
-  function initAutocompvare() {
+  function initAutocomplete() {
     var map2 = new google.maps.Map(document.getElementById('map2'), {
       center: {lat:-15.4954666, lng:-70.1416507},
       zoom: 13,
@@ -8,17 +8,18 @@
     });
 
     var input = document.getElementById('pac-input');
-    var pacInputAutocompvare = document.getElementById('pac-input-autocompvare');
+    var pacInputAutocomplete = document.getElementById('pac-input-autocomplete');
 
 
     var searchBox = new google.maps.places.SearchBox(input);
     map2.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
 
 
-    input.addEventListener('change', ()=>{
+    input.addEventListener('change', function() {
       var val = input.value
-      pacInputAutocompvare.value = val
+      pacInputAutocomplete.value = val
     })
+
 
     map2.addListener('bounds_changed', function() {
       searchBox.setBounds(map2.getBounds());
