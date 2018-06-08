@@ -6,6 +6,7 @@ class CreateStudents < ActiveRecord::Migration[5.1]
       t.string :address
       t.string :code
 
+
       t.timestamps
     end
   end

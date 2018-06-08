@@ -8,7 +8,7 @@
     });
 
     let input = document.getElementById('pac-input');
-    let pacInputComplete = document.getElementById('pac-input-complete');
+    let pacInputAutocomplete = document.getElementById('pac-input-autocomplete');
 
 
     let searchBox = new google.maps.places.SearchBox(input);
@@ -17,7 +17,7 @@
 
     input.addEventListener('change', ()=>{
       let val = input.value
-      pacInputComplete.value = val
+      pacInputAutocomplete.value = val
     })
 
     map2.addListener('bounds_changed', function() {

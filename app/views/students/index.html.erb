@@ -12,9 +12,11 @@
   <table>
     <thead>
       <tr>
-        <th>Name</th>
+        <th>Nombre</th>
         <th>Apellido</th>
         <th>Direccion</th>
+        <th>Numero</th>
+        <th>Manzana</th>
         <th>Código</th>
         <th>opciones</th>
       </tr>
@@ -25,6 +27,8 @@
           <td><%= f.name%> </td>
           <td><%= f.last_name%> </td>
           <td><%= f.address%> </td>
+          <td><%= f.number_address%> </td>
+          <td><%= f.apple_address%> </td>
           <td><%= f.code%> </td>
           <td class="option">
             <%= link_to  student_path(id:f.id) do %>
