@@ -1,33 +1,33 @@
 
 
-  function initAutocomplete() {
-    let map2 = new google.maps.Map(document.getElementById('map2'), {
+  function initAutocompvare() {
+    var map2 = new google.maps.Map(document.getElementById('map2'), {
       center: {lat:-15.4954666, lng:-70.1416507},
       zoom: 13,
       mapTypeId: 'roadmap'
     });
 
-    let input = document.getElementById('pac-input');
-    let pacInputAutocomplete = document.getElementById('pac-input-autocomplete');
+    var input = document.getElementById('pac-input');
+    var pacInputAutocompvare = document.getElementById('pac-input-autocompvare');
 
 
-    let searchBox = new google.maps.places.SearchBox(input);
+    var searchBox = new google.maps.places.SearchBox(input);
     map2.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
 
 
     input.addEventListener('change', ()=>{
-      let val = input.value
-      pacInputAutocomplete.value = val
+      var val = input.value
+      pacInputAutocompvare.value = val
     })
 
     map2.addListener('bounds_changed', function() {
       searchBox.setBounds(map2.getBounds());
     });
 
-    let markers = [];
+    var markers = [];
 
     searchBox.addListener('places_changed', function() {
-      let places = searchBox.getPlaces();
+      var places = searchBox.getPlaces();
 
       if (places.length == 0) {
         return;
@@ -39,13 +39,13 @@
       markers = [];
 
 
-      let bounds = new google.maps.LatLngBounds();
+      var bounds = new google.maps.LatLngBounds();
       places.forEach(function(place) {
         if (!place.geometry) {
 
           return;
         }
-        let icon = {
+        var icon = {
           url: place.icon,
           size: new google.maps.Size(71, 71),
           origin: new google.maps.Point(0, 0),
