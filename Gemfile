@@ -31,6 +31,14 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# Use Devise for authentication
+gem 'devise', '~> 4.2'
+
+# Use Omniauth Google plugin
+gem 'omniauth-google-oauth2', '~> 0.4.1'
+
+# Use ActiveRecord Sessions
+gem 'activerecord-session_store', '~> 1.0'
 
 gem 'geocoder'
 
@@ -49,6 +57,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Use Dotenv for environment variables
+  gem 'dotenv', '~> 2.2.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

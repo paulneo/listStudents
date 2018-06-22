@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-
+  before_action :authenticate_user!
   before_action :find_student, only: [:show,:edit,:update,:destroy]
 
   def index

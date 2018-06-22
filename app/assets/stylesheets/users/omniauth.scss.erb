@@ -1,0 +1,68 @@
+// Place all the styles related to the users/omniauth controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.login{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.70),
+      rgba(0, 0, 0, 0.70)
+    ),url(<%= asset_path 'google-maps.jpg' %>);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.loginContent{
+  padding: 30px;
+  border: 4px solid #3c85e4;
+  border-radius: 50px;
+  width: 400px;
+  height: 400px;
+  background:#3c85e4
+}
+.loginTitle{
+  text-align: center;
+  color: #fff;
+  margin: 0
+}
+.buttonLogin{
+  width: 100%;
+  padding: 19px;
+  background: #153c6d;
+  border-radius: 30px;
+}
+.field{
+  margin: 10px 0px;
+}
+.inputLogin{
+  width: 100%;
+  background-color: #fff !important;
+  padding: 16px 0px;
+  text-align: center;
+  color: #153c6d;
+}
+.labelLogin{
+  color: white;
+  font-size: 20px;
+}
+.checkLogin{
+  width: auto !important
+}
+.linksLogin{
+  color: white;
+  font-size: 18px;
+}
+.linksLoginGooogle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  img{
+    width: 80%;
+    height: 69px;
+    text-align: center;
+  }
+}
