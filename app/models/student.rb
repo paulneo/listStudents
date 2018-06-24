@@ -3,7 +3,7 @@ class Student < ApplicationRecord
   geocoded_by :address
   after_validation :geocode
   def self.search(search)
-    where("name  LIKE ?", "%#{search}%")
+    where("code  LIKE ?", "%#{search}%")
 
   end
 end
