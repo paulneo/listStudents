@@ -3,7 +3,11 @@ class StudentsController < ApplicationController
   before_action :find_student, only: [:show,:edit,:update,:destroy]
 
   def index
-    @students = Student.all
+    if params[:q]
+      @students = Student.search(params[:q]).order("created_at DESC")
+    else
+      @students = Student.all
+    end
   end
 
   def show

@@ -111,6 +111,39 @@ input{
   font-size: 15px;
   color: #f35959
 }
+.search{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchFormContent{
+  position: relative;
+}
+.searchForm{
+padding-right: 36px;
+}
+.searchIcon{
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  color: white;
+  border-left: 1px solid white;
+  padding-left: 7px;
+  height: 30px;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.SeachButton{
+  width: 100px;
+  margin-left: 20px;
+}
+.searchContent{
+  text-align: center;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
