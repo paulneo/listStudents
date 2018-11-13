@@ -16,3 +16,16 @@ module ListStudents
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+module Api
+  class Application < Rails::Application
+    config.middleware.use Rack::Cors do
+      allow do
+        origins "*"
+        resource "*", headers: :any, methods: [:get,
+            :post, :put, :delete, :options]
+      end
+    end
+
+  end
+end

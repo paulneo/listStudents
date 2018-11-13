@@ -33,6 +33,11 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 # Use Devise for authentication
 gem 'devise', '~> 4.2'
+gem 'grape-active_model_serializers', '~> 1.5', '>= 1.5.2'
+gem 'rack-cors', '~> 1.0', '>= 1.0.2'
+gem 'grape-active_model_serializers', '~> 1.5', '>= 1.5.2'
+
+
 
 # Use Omniauth Google plugin
 gem 'omniauth-google-oauth2', '~> 0.4.1'
